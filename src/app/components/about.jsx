@@ -67,7 +67,7 @@ export default function About()
             <div className="flex items-center ">
               <button className=" bg-navbtn-gradient rounded-full px-5 py-3 font-custom font-bold">
                 {" "}
-                <Link href="#">Let's Get In Touch</Link>
+                <Link href="#">Lets Get In Touch</Link>
               </button>
              
             </div>
