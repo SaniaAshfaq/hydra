@@ -58,7 +58,7 @@ export default function Footer() {
 
             <button className="formheadingbutton bg-navbtn-gradient rounded-full px-5 py-3 font-custom font-bold my-3" data-aos="fade-up">
                 {" "}
-                <Link href="#">Let's Get In Touch</Link>
+                <Link href="#">Lets Get In Touch</Link>
               </button>
         </div>
 
