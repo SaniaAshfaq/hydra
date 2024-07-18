@@ -2,28 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../public/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype'),
+   
+}
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+ 
+  background-color: rgb(48, 44, 66);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+
+body {
+ background-color: rgb(48, 44, 66);
+ padding-left: 60px;
+ padding-right: 60px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+@media(max-width: 1295px)
+{
+  body{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+@media(max-width: 767px)
+{
+  body{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @layer utilities {
@@ -31,3 +45,37 @@ body {
     text-wrap: balance;
   }
 }
+
+.BackgroundGradient{
+  background: linear-gradient(to right, #211E2E,  #3A3456, #211E2E);
+}
+.cardGradient{
+  background: linear-gradient(to top, #211E2E,  #3A3456, #211E2E);
+}
+/* //carsole effect */
+.loop-animation{
+  animation: loop 40s linear infinite ;
+}
+@keyframes loop {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform:  translateX(-100%);
+  }
+  
+}
+
+.formheadingbutton{
+
+  border-image: linear-gradient(to right,  rgba(33,30,46,1), #d6d6d9, rgba(33,30,46,1));
+}
+
+.formgradient{
+  background: rgb(190,194,205);
+  background: radial-gradient(circle, rgba(190,194,205,0.4) 0%, rgb(16, 11, 42) 33%);
+}
+
+/* .input{
+  color:  white;
+} */
