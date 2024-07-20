@@ -91,7 +91,7 @@ export default function Hero() {
             <Image
               src={hero}
               alt="hero"
-              className=" w-[250px] md:w-[500px] lg:w-[400px]  z-10 relative animate__animated animate__rollIn"
+              className="  w-[250px] md:w-[500px] lg:w-[400px]  z-10 relative animate__animated animate__rollIn"
             />
 
             <Image

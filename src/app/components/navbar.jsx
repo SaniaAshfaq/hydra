@@ -64,7 +64,7 @@ export default function Navbar()
 
 
         {/* navbar for mobile devices */}
-        <div className={ `w-4/5 left-0 h-screen bg-[#C0B7E8] absolute top-0 flex-col items-center py-16 gap-4  border-t-2 border-blue-950 md:hidden ${showDiv ? 'hidden' : 'flex'}`}>
+        <div className={ ` z-50 w-4/5 left-0 h-screen bg-[#C0B7E8] absolute top-0 flex-col items-center py-16 gap-4  border-t-2 border-blue-950 md:hidden ${showDiv ? 'hidden' : 'flex'}`}>
         <Image src={cross} alt="cross" width={30} height={30} onClick={ShowNav}/>
 
         <Link href= "#" className="text-[12px] font-bold">ABOUT</Link>
